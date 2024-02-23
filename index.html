@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign-up Form</title>
+</head>
+<body>
+
+  <div class="left-third">
+    <img src="assets/halie-west-25xggax4bSA-unsplash.jpg" class="background-img">
+    <div class="logo-container">  
+      <img src="assets/odin-lined.png" class="logo-img">
+      <div class="logo-text">ODIN</div>
+    </div>
+    <div class="img-credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
+
+  </div>
+
+  <div class="right-thirds">
+    <div class="row">
+      <h2>
+        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+        Sign up now to get started.
+      </h2>
+      <h2>You know you want to.</h2>
+    </div>
+
+    <div class="row form-row">
+      <form action="" id="sign-up-form" class="form">
+        <h2>Let's do this!</h2>
+    
+        <fieldset>
+          <label for="fname">FIRST NAME</label>
+          <input type="text" name="first_name" id="fname" required />
+        </fieldset>
+        <fieldset>
+          <label for="lname">LAST NAME</label>
+          <input type="text" name="last_name" id="lname" required />
+        </fieldset>
+        <fieldset>
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" required ?>
+        </fieldset>
+        <fieldset>
+          <label for="phone">PHONE NUMBER</label>
+          <input type="tel" name="phone_number" id="phone" required />
+        </fieldset>
+        <fieldset>
+          <label for="pass">PASSWORD</label>
+          <input type="password" name="password" id="pass" class="error" minlength="8" required />
+        </fieldset>
+        <fieldset>
+          <label for="confirm-pass">CONFIRM PASSWORD</label>
+          <input type="password" name="confirm_password" id="confirm-pass" class="error" required />
+        </fieldset>
+      </form>
+    </div>
+    <div class="row">
+      <button form="sign-up-form" class="submit-btn">Create Account</button>
+      <div>Already have an account? <a href="www.google.com">Log in</a></div>
+    </div>
+    
+  </div>
+</body>
+</html>

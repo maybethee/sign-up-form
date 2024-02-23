@@ -1,0 +1,232 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  width: auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('fonts/Norse-Bold.otf')
+       format('opentype');
+  font-weight: bold;
+  font-style: oblique;
+}
+
+body {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+.left-third {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.right-thirds {
+  background-color: #f9fafb;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.logo-container {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  width: clamp(1rem, 8.5vw, 9rem);
+  height: auto;
+}
+
+.logo-text {
+  font-family: 'Norse-Bold', sans-serif;
+  color: white;
+  font-size: clamp(1rem, 8vw, 8.5rem);
+}
+
+.img-credit,
+div a {
+  font-size: .65rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
+.row,
+.row a {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.row a {
+  color: #5a6c4a;
+  text-decoration: none;
+}
+
+.row h2 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2rem;
+  word-wrap: normal;
+  width: 550px;
+}
+
+.row:first-child h2:first-child {
+  padding-bottom: 2rem;
+}
+
+.row:first-child h2:last-child {
+  padding-bottom: 2.5rem;
+}
+
+.row:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.row:nth-child(2) h2 {
+  padding-top: 1rem;
+}
+
+.row,
+.form-row {
+  padding-left: 5%;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px #dbdbdc;
+  
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.5rem;
+  column-gap: .5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.form h2 {
+  grid-column: span 2;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset label,
+fieldset input {
+  display: block;
+}
+
+label {
+  font-size: .6rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+}
+
+input {
+  border-color: #E5E7EB;
+  border-radius: 5px;
+  font-size: .8rem;
+  padding: 5px 40px 5px 7px;
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  margin: 2rem 0;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: .75rem 3rem;
+}
+
+button:hover {
+  background-color: #99b87e;
+  color: black;
+}
+
+input.error:invalid {
+  border-color: red;
+}
